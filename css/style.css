@@ -1,0 +1,417 @@
+@import url(variables.css);
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "EncodeSans-Regular";
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SF-Bold";
+    src: url(../storage/font/SF-Pro-Text-Bold.otf);
+}
+
+@font-face {
+    font-family: "SF-Heavy";
+    src: url(../storage/font/SF-Pro-Text-Heavy.otf);
+}
+
+@font-face {
+    font-family: "SF-Light";
+    src: url(../storage/font/SF-Pro-Text-Light.otf);
+}
+
+@font-face {
+    font-family: "SF-Medium";
+    src: url(../storage/font/SF-Pro-Text-Medium.otf);
+}
+
+/* ---------css usado para estilizar el background y el header ----------*/
+body{
+    background-color:var(--color-6);
+    width: 100vw;
+    height: 95vh;
+    /* background: no-repeat; */
+    /* background:image-set(../storage/img/bg__card_2.jpg); */
+    background-image:url(../storage/img/bg__card_2.jpg);
+}
+
+header{
+    /* background: blue; */
+    /* background: red; */
+    width:100% ;
+    /* height: 7%; */
+    padding-inline:var(--space-layout-padding-lr) ;
+    margin-top:5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.header div{
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+}
+
+.header div img{
+    width:25% ;
+    height: 90%;
+    /* background: red; */
+    padding-top: 3%;
+}
+.header div h2{
+    padding-block: 7%;
+    font-size: 1.2rem;
+    color:var(--color-2);
+    font-family: "SF-heavy";
+    /* font-family: ; */
+}
+
+.header .header__menu{
+    /* background: blue; */
+    width: 5%;
+    /* height: 35%; */
+    /* margin-top:4%; */
+}
+
+/* ----------------- codigo de css para el main ----------------*/
+
+
+.main{
+    /* background-color: green; */
+    width: 100%;
+    height: 85%;
+    margin-top: 3% ;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .first__section{
+    /* background-color: blue; */
+    width: 100%;
+    height: 35%;
+    padding-inline: var( --space-layout-padding-lr);
+
+}
+
+.main .first__section .welcome__message{
+    /* background-color: red; */
+    width: 90%;
+    height: 45%;
+    color: var(--color-2);
+    
+
+}
+
+.main .first__section .welcome__message h1{
+    font-size: 2rem;
+    font-family: "SF-Heavy";
+}
+
+.main .first__section .welcome__message p{
+    font-family: "SF-Light";
+    font-size: 2rem ;
+}
+
+.main .first__section .balance__cards{
+    display: flex;
+    flex-direction: row;
+    /* background: violet ; */
+    width: 100%;
+    height: 55%;
+    gap: 5%;
+
+}
+
+.main .first__section .balance__cards div{
+    /* background: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    color: var(--color-2);
+    gap: 5%;
+    padding-block-start: 6%;
+}
+
+
+.main .first__section .balance__cards div span{
+    
+    font-family: "SF-Bold";
+    font-size: .85rem;
+}
+
+.balance__cards div h2 #cost{
+
+    font-family: "SF-Light";
+    font-size: .85rem;
+}
+
+.balance__cards div h2{
+    
+    font-size: 1.4rem;
+    font-family: "SF-Bold";
+}
+
+.main .first__section .balance__cards div progress{
+        /* background: red; */
+        width: 98%;
+        height: 8%;
+        margin: 2%;
+}
+.main .first__section .balance__cards div progress{
+        --color: var(--color-2);
+     }
+    
+progress[value] {
+        --color: var(--color-);
+        --background: white;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        border-radius: 1em;
+        background: var(--background);
+        height: 10%;
+      }
+      progress[value]::-webkit-progress-bar {
+        border-radius: 1em;
+        background: var(--background);
+      }
+      progress[value]::-webkit-progress-value {
+        border-radius: 1em;
+        background: var(--color-3);
+      }
+
+
+/* ------------------------------------------------------ */
+
+
+.main .first__section .balance__cards div #progress_bar_2{
+    /* background: red; */
+    width: 98%;
+    height: 8%;
+    margin: 2%;
+}
+.main .first__section .balance__cards div #progress_bar_2{
+    --color: var(--color-2);
+ }
+
+ #progress_bar_2 [value] {
+    --color: var(--color-);
+    --background: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 1em;
+    background: var(--background);
+    height: 10%;
+  }
+  #progress_bar_2[value]::-webkit-progress-bar {
+    border-radius: 1em;
+    background: var(--background);
+  }
+  #progress_bar_2[value]::-webkit-progress-value {
+    border-radius: 1em;
+    background: var(--color-4);
+  }
+
+.main .second__section{
+    margin-top: 3%;
+    background:var(--color-11-b) ;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 10px var(--color-11-b);
+  
+}
+
+.second__section p:first-child{
+    /* background: red; */
+    width: 100%;
+    height: 7%;
+    margin-top: 3%;
+    font-family: "SF-Heavy";
+    font-size: 1.2rem;
+    padding-inline:var(--space-layout-padding-lr) ;
+    color: var(--color-2);
+
+}
+
+.second__section .article__activities{
+    /* background: blue;  */
+    margin-top: 2%;
+    padding-block: 2%;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    gap: 2%;
+    /* margin-top: 2%; */
+    padding-left: var(--space-layout-padding-lr);
+    overflow-x: scroll;
+}
+
+.article__activities div{
+    /* background: red; */
+    background: var(--color-2);
+    width: 130px; /* Ajusta esto según tu contenido */
+    height: 100%;
+    /* margin-top:% ; */
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px var(--color-4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    flex-shrink: 0;
+    /* padding-block: 7%; */
+}
+
+.article__activities div img{
+    /* background: green; */
+    width: 40%;
+    height: 30%;
+}
+
+
+.article__activities div p{
+    font-family: "SF-Medium";
+    color: var(--color-1);
+    /* background: red; */
+    /* font-size: 1.1rem; */
+}
+
+.second__section .article__transaccion{
+    /* background: green; */
+    width: 100%;
+    height: 43%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: var(--space-layout-padding-lr);
+    overflow-y: scroll;
+}
+
+.second__section h3{
+    padding-left: var(--space-layout-padding-lr);
+    font-family: "SF-Medium";
+    color: var(--color-2);
+}
+
+.second__section .article__transaccion ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+}
+
+.second__section .article__transaccion li{
+
+    list-style: none;
+    /* background: red; */
+    padding: 15px 0;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    /* justify-content: space-between;     */
+}
+
+.second__section .article__transaccion li section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+}
+
+.second__section .article__transaccion li section h4{
+    font-family: "SF-Medium";
+    color:var(--color-8);
+}
+
+.second__section .article__transaccion li section small{
+    font-family: "SF-Light";
+    color:var(--color-4);  
+}
+
+.second__section .article__transaccion li img{
+
+    /* background: blue; */
+    width: 10%;
+
+}
+/* ---------------------------Footer----------------------------- */
+
+.footer{
+    background: var(--color-6);
+    width: 100%;
+    height: 10%;
+    bottom: 0px;
+    position: fixed;
+}
+
+.footer .ul__footer{
+    /* background: blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .ul__footer > li  {
+    list-style: none;
+    /* background: red ; */
+    width: 12%;
+    height: 90%;
+    display: flex;
+    /* align-items: last baseline; */
+    /* border-radius: 50%; */
+}
+.ul__footer li a {
+    display: flex;
+    width: 100%;
+    transition-duration: 0.3s;
+    
+}
+
+
+.ul__footer li img{
+    width: 90%;
+    transition-duration: 0.3s;
+    
+}
+
+.ul__footer ul li:last-child a {
+    display: flex;
+    width: 75%;
+    transition-duration: 0.3s;
+    justify-content: baseline-end;
+    filter: none; /* Restablece los estilos de hover */
+    transform: none; /* Restablece los estilos de hover */
+    
+}
+
+
+
+
+
+.ul__footer li img:hover{
+    filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(125deg);
+    transform: scale(1.1);
+    /* filter: invert(1); */
+}
+
+
+
+
