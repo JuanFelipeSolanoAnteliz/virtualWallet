@@ -1,0 +1,347 @@
+@import url(variables.css);
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "EncodeSans-Regular";
+    box-sizing: border-box;
+    /* border: solid 20px red; */
+    
+}
+
+@font-face {
+    font-family: "SF-Bold";
+    src: url(../storage/font/SF-Pro-Text-Bold.otf);
+}
+
+@font-face {
+    font-family: "SF-Heavy";
+    src: url(../storage/font/SF-Pro-Text-Heavy.otf);
+}
+
+@font-face {
+    font-family: "SF-Light";
+    src: url(../storage/font/SF-Pro-Text-Light.otf);
+}
+
+@font-face {
+    font-family: "SF-Medium";
+    src: url(../storage/font/SF-Pro-Text-Medium.otf);
+}
+
+
+/* ------------------------header--------------------- */
+body{
+    width: 100vw;
+    /* height: 100vh; */
+    background: linear-gradient(to right bottom, var(--color-6), var(--color-7));
+
+}
+.header{
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 5%;
+    padding-inline: var(--space-layout-padding-lr);
+}
+
+.header div {
+    display:flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.header div h2{
+    font-family: "SF-Bold";
+    color: var(--color-2);
+    font-size: 1rem;
+}
+
+.header div img{
+    background: green ;
+    width: 25%;
+}
+
+.header img {
+    background: red;
+    width: 5%;
+}
+
+/* -------------------css main------------------- */
+
+.main{
+    /* background: yellowgreen; */
+    margin-top: 5%;
+    /* padding-inline: var(--space-layout-padding-lr) ; */
+
+}
+.main h2{
+    color: var(--color-2);
+    font-family: "SF-Bold";
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    padding-inline: var(--space-layout-padding-lr);
+}
+
+.main .first__section{
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    background: rgba(225, 222, 222, 0.149);
+    backdrop-filter: blur(1px);
+    border-radius: 30px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--space-layout-padding-lr);
+    margin-inline: var(--space-layout-padding-lr);
+    padding-block: 7%;
+    position: relative;
+    margin-top: 5%;
+    overflow: hidden;
+    padding-left: 150px;
+    box-shadow: 0 0 10px var(--color-11);
+}
+
+.green__circle {
+    position: absolute;
+    background: var(--color-5);
+    width: 290.5px;
+    height: 290.5px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 50%;
+    left: -150px;
+}
+
+.chancho__image{
+    position: absolute;
+    left: 7px;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+}
+
+.main .first__section img:last-child{
+    width: 8%;
+    background: blue;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+
+}
+
+.main .first__section div:nth-child(3){
+    background: red;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 90px;
+    gap: 5%;
+}
+
+.main .first__section div h3{
+    font-family: "SF-Medium";
+    color:var(--color-7);
+}
+
+.main .first__section div small{
+    font-family: "SF-Light";
+    color:var(--color-4);
+}
+
+.main .first__section div button{
+    background:var(--color-7) ;
+    border-style: none;
+    border-radius: 25px;
+    width: 70%;
+    height: 25px;
+    font-size: .8rem;
+    color:var(--color-2);
+    font-family: "SF-Medium";
+    margin-top: 3%;
+}
+/* ---------------------second section main ------------------- */
+
+.main .my__cards{
+    margin-top: 5%;
+}
+
+.main .second__section{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.ul__cards{
+    margin-top: 3%;
+    display: flex;
+    width: 100%;
+    gap:13px;
+    overflow-x: scroll;
+    padding-left:var(--space-layout-padding-lr);
+    padding-block: 5%;
+    /* background-image: url(../storage/img/background___circles_card\ .svg); */
+
+}
+
+.second__section .ul__cards li{    
+    background: var(--color-1);
+    background-image: url(../storage/img/bg_card.jpg);
+    position: relative;
+    width:190px;
+    height: 255px;
+    border-radius:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    overflow: hidden;
+    padding-inline: 1%;
+    flex-shrink: 0;
+    filter:grayscale(1);
+    transition: 0.2s;
+    /* opacity: 0.9; */
+}
+
+.second__section .ul__cards li:hover{
+    opacity: 1;
+    transform:scale(1.1);
+    filter:grayscale(0);
+
+}
+
+.ul__cards li > img:first-child{
+    position: absolute;
+    object-fit: cover;
+    width: 220px;
+    height: 290px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.ul__cards li div {
+    /* background: red; */
+    padding-inline: var(--space-layout-padding-lr);
+    padding-block: 8% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-2);
+}
+
+.ul__cards .card div small{
+    font-family: "SF-Medium";
+
+}
+
+/* .ul__cards .card div span{
+    font-size: rem;
+} */
+
+.ul__cards div > img:first-child{
+    /* background: blue; */
+    width: 16%;
+}
+
+.ul__cards li .value{
+    /* background: green; */
+    justify-content: center;
+    
+}
+.ul__cards li .value > div{
+    /* background: blueviolet; */
+    align-items: baseline;
+    gap: 5%;
+}
+
+
+.ul__cards li .value div span{
+    font-family: "SF-Bold";
+    font-size: .9rem;
+}
+
+.ul__cards li .value div h3{
+    font-family: "SF-Heavy";
+    font-size:1.5rem ;
+
+}
+
+.ul__cards div > img:last-child{
+    /* background: magenta; */
+    width: 25%;
+}
+
+.ul__cards li >div .visa {
+    width: 19%;
+}
+
+.second__section .ul__cards .card__2{
+    background: var(--color-4);
+    background-image: url(../storage/img/bg__card_2.jpg);
+}
+
+.second__section .ul__cards .card__2 .pin small{
+    font-family: "SF-Medium";
+}
+
+/* ------------------  css footer------------------------ */
+
+.footer{
+    background: var(--color-1);
+    width: 100%;
+    height: 10%;
+    bottom: 0px;
+    position: fixed;
+}
+
+.footer .ul__footer{
+    /* background: blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .ul__footer > li  {
+    list-style: none;
+    /* background: red ; */
+    width: 12%;
+    height: 90%;
+    display: flex;
+    /* align-items: last baseline; */
+    /* border-radius: 50%; */
+}
+.ul__footer li a {
+    display: flex;
+    width: 100%;
+    transition-duration: 0.3s;
+    
+}
+
+
+.ul__footer li img{
+    width: 90%;
+    transition-duration: 0.3s;
+    
+}
+
+.ul__footer li:nth-child(3) a{
+    display: flex;
+    width: 75%;
+    transition-duration: 0.3s;
+    justify-content: baseline-end;
+    
+}
+
+.ul__footer li img:hover{
+    filter: grayscale(100%) brightness(65%) sepia(400%) hue-rotate(125deg);
+    /* filter: grayscale(100%) brightness(65%) sepia(400%) hue-rotate(170020deg); */
+    transform: scale(1.1);
+    /* filter: invert(1); */
+}
+
