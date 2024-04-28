@@ -92,10 +92,29 @@ body{
     padding-block: 7%;
     position: relative;
     margin-top: 5%;
+    overflow: hidden;
+    padding-left: 150px;
 }
 
-.main .first__section img:first-child{
-    width: 35%;
+.green__circle {
+    position: absolute;
+    background: rgb(216, 255, 216);
+    width: 290.5px;
+    height: 290.5px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 50%;
+    left: -150px;
+}
+
+.asd{
+    position: absolute;
+    left: 7px;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
 }
 
 .main .first__section img:last-child{
@@ -103,10 +122,12 @@ body{
 
 }
 
-.main .first__section div{
+.main .first__section div:nth-child(3){
+    background: red;
     display: flex;
     flex-direction: column;
-    /* gap: %; */
+    width: 85%;
+    gap: 5px;
 }
 
 .main .first__section div h3{
