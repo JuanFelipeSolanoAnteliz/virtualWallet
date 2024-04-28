@@ -65,3 +65,67 @@ body{
     width: 5%;
 }
 
+/* -------------------css main------------------- */
+
+.main{
+    background: yellowgreen;
+    margin-top: 5%;
+    padding-inline: var(--space-layout-padding-lr) ;
+
+}
+.main h2{
+    color: var(--color-1);
+    font-family: "SF-Medium";
+    display: flex;
+    flex-direction: column;
+}
+
+.main .first__section{
+    display: flex;
+    flex-direction: row;
+    background: var(--color-2);
+    border-radius: 30px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--space-layout-padding-lr);
+    padding-block: 7%;
+    position: relative;
+    margin-top: 5%;
+}
+
+.main .first__section img:first-child{
+    width: 35%;
+}
+
+.main .first__section img:last-child{
+    width: 10%;
+
+}
+
+.main .first__section div{
+    display: flex;
+    flex-direction: column;
+    /* gap: %; */
+}
+
+.main .first__section div h3{
+    font-family: "SF-Medium";
+    color:var(--color-1);
+}
+
+.main .first__section div small{
+    font-family: "SF-Light";
+    color:var(--color-4);
+}
+
+.main .first__section div button{
+    background:var(--color-3) ;
+    border-style: none;
+    border-radius: 25px;
+    width: 75%;
+    height: 25px;
+    font-size: .7rem;
+    color:var(--color-2);
+    font-family: "SF-Medium";
+}
