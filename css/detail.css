@@ -1,0 +1,67 @@
+@import url(variables.css);
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "EncodeSans-Regular";
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SF-Bold";
+    src: url(../storage/font/SF-Pro-Text-Bold.otf);
+}
+
+@font-face {
+    font-family: "SF-Heavy";
+    src: url(../storage/font/SF-Pro-Text-Heavy.otf);
+}
+
+@font-face {
+    font-family: "SF-Light";
+    src: url(../storage/font/SF-Pro-Text-Light.otf);
+}
+
+@font-face {
+    font-family: "SF-Medium";
+    src: url(../storage/font/SF-Pro-Text-Medium.otf);
+}
+
+
+/* ------------------------header--------------------- */
+body{
+    width: 100vw;
+    height: 100vh;
+
+}
+.header{
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 5%;
+    padding-inline: var(--space-layout-padding-lr);
+}
+
+.header div {
+    display:flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.header div h2{
+    font-family: "SF-Heavy";
+    color: var(--color-1);
+    font-size: 1.2rem;
+}
+
+.header div img{
+    background: green ;
+    width: 25%;
+}
+
+.header img {
+    background: red;
+    width: 5%;
+}
+
