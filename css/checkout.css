@@ -34,6 +34,8 @@ body{
 
 }
 header{
+    position: absolute;
+    top:0;
     background: blue;
     /* background: red; */
     width:100% ;
@@ -76,9 +78,40 @@ header{
 
 .circle__header{
     background: var(--color-1);
-    position: relative;
-    background: #2c3e50;
-    height: 100px;
-    border-bottom-left-radius: 60% 100%;
-    border-bottom-right-radius: 60% 100%;
+    position:relative;
+    top: -10%;
+    height: 300px;
+
+    border-bottom-left-radius: 200% 240%;
+    border-bottom-right-radius: 200% 240%;
+    z-index: -1;
 }
+
+.circle__header .circle__title{
+    background: var(--color-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: -20%;
+}
+
+.circle__title >h1{
+    color: var(--color-2);
+    width: 55%;
+    background: rebeccapurple;
+    text-align: center;
+    font-family: "SF-Bold";
+    margin-top: 10% ;
+}
+
+.circle__title >div{
+    display: flex;
+    align-items: baseline;
+}
+
