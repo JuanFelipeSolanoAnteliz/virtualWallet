@@ -242,6 +242,7 @@ progress[value] {
 .second__section .article__activities{
     /* background: blue;  */
     margin-top: 2%;
+    padding-block: 2%;
     width: 100%;
     height: 45%;
     display: flex;
@@ -265,6 +266,7 @@ progress[value] {
     align-items: center;
     gap: 5%;
     flex-shrink: 0;
+    /* padding-block: 7%; */
 }
 
 .article__activities div img{
