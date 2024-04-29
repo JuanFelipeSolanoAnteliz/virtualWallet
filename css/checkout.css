@@ -33,7 +33,52 @@ body{
     height: 100vh;
 
 }
-.header{
-    background-color: aqua;
-    width: 100%;
+header{
+    background: blue;
+    /* background: red; */
+    width:100% ;
+    /* height: 7%; */
+    padding-inline:var(--space-layout-padding-lr) ;
+    margin-top:5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.header div{
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+}
+
+.header div img{
+    width:25% ;
+    height: 90%;
+    /* background: red; */
+    padding-top: 3%;
+}
+.header div h2{
+    padding-block: 7%;
+    font-size: 1.2rem;
+    color:var(--color-2);
+    font-family: "SF-heavy";
+    /* font-family: ; */
+}
+
+.header .header__menu{
+    /* background: blue; */
+    width: 5%;
+    /* height: 35%; */
+    /* margin-top:4%; */
+}
+
+.circle__header{
+    background: var(--color-1);
+    position: relative;
+    background: #2c3e50;
+    height: 100px;
+    border-bottom-left-radius: 60% 100%;
+    border-bottom-right-radius: 60% 100%;
 }
