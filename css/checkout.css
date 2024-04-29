@@ -26,6 +26,10 @@
     src: url(../storage/font/SF-Pro-Text-Medium.otf);
 }
 
+@font-face {
+    font-family: "SF-Regular";
+    src: url(../storage/font/SF-Pro-Text-Regular.otf);
+}
 
 /* ------------------------header--------------------- */
 body{
@@ -36,7 +40,7 @@ body{
 header{
     position: absolute;
     top:0;
-    background: blue;
+    /* background: blue; */
     /* background: red; */
     width:100% ;
     /* height: 7%; */
@@ -81,10 +85,9 @@ header{
     position:relative;
     top: -10%;
     height: 300px;
-
     border-bottom-left-radius: 200% 240%;
     border-bottom-right-radius: 200% 240%;
-    z-index: -1;
+    z-index: -1; 
 }
 
 .circle__header .circle__title{
@@ -99,15 +102,16 @@ header{
     position: absolute;
     left: 25%;
     bottom: -20%;
+    gap: 5%;
 }
 
 .circle__title >h1{
     color: var(--color-2);
-    width: 55%;
-    background: rebeccapurple;
+    width: 65%;
+    /* background: rebeccapurple; */
     text-align: center;
     font-family: "SF-Bold";
-    margin-top: 10% ;
+    margin-top: 15% ;
 }
 
 .circle__title >div{
@@ -115,3 +119,131 @@ header{
     align-items: baseline;
 }
 
+.circle__title > div > span,h2{
+    color: var(--color-2);
+    font-family: "SF-Bold";
+}
+
+.circle__header img{
+    width: 370px;
+    position: absolute;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main .button__section {
+    margin-top: 5%;
+    display: grid;
+    /* width: 80%; */
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit);
+    grid-auto-flow: column  ;
+    /* grid-template-rows: auto; */
+    padding:8%;
+    gap: 3%;
+    overflow-x: scroll;
+
+}
+
+.button__section button{
+    height: 30px;
+    border-radius: 30px ;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "SF-Regular";
+    width: 100px;
+    font-size: 1.1rem;
+}
+
+.button__section button:first-child{
+    grid-row: 1/1;
+    grid-column: 1/2;
+    background: var(--color-1);
+    color: var(--color-2);
+    /* width: 110px; */
+    height: 35px;
+
+}
+
+.button__section button:nth-child(2){
+    background: var(--color-2);
+    width: 80px;
+    height: 35px;
+    grid-row:1/1 ;
+    grid-column: 2/3;
+    color: var(--color-3);
+    border-color: var(--color-3);
+}
+
+.button__section button:last-child{
+    background: var(--color-2);
+    color: var(--color-4);
+    border-color: var(--color-4);
+    grid-row: 1/1;
+    grid-column: 3/4;
+    /* width: 110px; */
+    height: 35px;
+    transition-duration: 0.3s;
+}
+
+.button__section button:hover{
+
+    transform: scale(1.2);
+}
+
+.grafic__section{
+    margin-top: 2%;
+    width: 380px;
+    /* background: red; */
+}
+/* -----------------footer------------- */
+
+.footer{
+    background: var(--color-1);
+    
+}
+
+.footer{
+    background: var(--color-1);
+    width: 100%;
+    /* height: 10%; */
+    position: fixed;
+    bottom: 0%;
+}
+
+.footer .ul__footer{
+    /* background: blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .ul__footer > li  {
+    list-style: none;
+    /* background: red ; */
+    width: 12%;
+    height: 90%;
+    display: flex;
+    /* align-items: last baseline; */
+    /* border-radius: 50%; */
+}
+
+.ul__footer li img{
+    width: 100%;
+    transition-duration: 0.3s;
+}
+
+.ul__footer li img:hover{
+    filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(105deg);
+    /* mask-image: url(../storage/img/bell_icon.svg); */
+    transform: scale(1.1);
+}
