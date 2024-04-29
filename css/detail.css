@@ -4,6 +4,7 @@
     margin: 0;
     font-family: "EncodeSans-Regular";
     box-sizing: border-box;
+    /* border: solid 20px red; */
 }
 
 @font-face {
@@ -94,6 +95,7 @@ body{
     margin-top: 5%;
     overflow: hidden;
     padding-left: 150px;
+    box-shadow: 0 0 10px var(--color-4);
 }
 
 .green__circle {
@@ -173,13 +175,14 @@ body{
     display: flex;
     width: 100%;
     gap:10px;
-    overflow-x: scro290
+    overflow-x: scroll;
+    
    
     /* background-image: url(../storage/img/background___circles_card\ .svg); */
 
 }
 
-.ul__cards li{    
+ .second__section .ul__cards li{    
     background: var(--color-1);
     position: relative;
     width:220px;
@@ -193,6 +196,8 @@ body{
     /* overflow-x: scroll; */
     padding-inline: 1%;
     flex-shrink: 0;
+    box-shadow: 0 0 5px var(--color-4);
+
 
 }
 
@@ -204,8 +209,8 @@ body{
     overflow: hidden;
     object-fit: cover;
 }
-.ul__cards .card div {
-    background: red;
+.ul__cards li div {
+    /* background: red; */
     padding-inline: var(--space-layout-padding-lr);
     padding-block: 8% ;
     display: flex;
@@ -216,6 +221,7 @@ body{
 
  .ul__cards .card div small{
     font-family: "SF-Medium";
+
 }
 
 /* .ul__cards .card div span{
@@ -223,28 +229,28 @@ body{
 } */
 
 .ul__cards div > img:first-child{
-    background: blue;
+    /* background: blue; */
     width: 16%;
 }
 
-.ul__cards .card .value{
-    background: green;
+.ul__cards li .value{
+    /* background: green; */
     justify-content: center;
     
 }
-.ul__cards .card .value > div{
-    background: blueviolet;
+.ul__cards li .value > div{
+    /* background: blueviolet; */
     align-items: baseline;
     gap: 5%;
 }
 
 
-.ul__cards .card .value div span{
+.ul__cards li .value div span{
     font-family: "SF-Bold";
     font-size: .9rem;
 }
 
-.ul__cards .card .value div h3{
+.ul__cards li .value div h3{
     font-family: "SF-Heavy";
     font-size:1.5rem ;
 
@@ -257,6 +263,14 @@ body{
 
 .ul__cards li >div .visa {
     width: 19%;
+}
+
+.second__section .ul__cards .card__2{
+    background: var(--color-4);
+}
+
+.second__section .ul__cards .card__2 .pin small{
+    font-family: "SF-Medium";
 }
 
 /* ------------------  css footer------------------------ */
@@ -294,6 +308,7 @@ body{
 
 .ul__footer li img{
     width: 100%;
+    transition-duration: 0.3s;
 }
 
 .ul__footer li img:hover{

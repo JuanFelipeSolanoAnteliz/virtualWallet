@@ -365,7 +365,13 @@ progress[value] {
 
 .ul__footer li img{
     width: 100%;
+    transition-duration: 0.3s;
     
+}
+
+.ul__footer li img:hover{
+    filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(105deg);
+    transform: scale(1.1);
 }
 
 
