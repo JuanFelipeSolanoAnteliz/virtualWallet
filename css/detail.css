@@ -67,7 +67,7 @@ body{
 /* -------------------css main------------------- */
 
 .main{
-    background: yellowgreen;
+    /* background: yellowgreen; */
     margin-top: 5%;
     padding-inline: var(--space-layout-padding-lr) ;
 
@@ -218,6 +218,10 @@ body{
     font-family: "SF-Medium";
 }
 
+/* .ul__cards .card div span{
+    font-size: rem;
+} */
+
 .ul__cards div > img:first-child{
     background: blue;
     width: 16%;
@@ -228,27 +232,34 @@ body{
     justify-content: center;
     
 }
-/* .ul__cards .card .value > .baseline{
+.ul__cards .card .value > div{
     background: blueviolet;
     align-items: baseline;
-} */
+    gap: 5%;
+}
 
 
-.main .second__section .ul__cards .card .value div span{
+.ul__cards .card .value div span{
     font-family: "SF-Bold";
     font-size: .9rem;
 }
 
-.main .second__section .ul__cards .card .value div h3{
+.ul__cards .card .value div h3{
     font-family: "SF-Heavy";
     font-size:1.5rem ;
 
 }
 
-.main .second__section .ul__cards div > img:last-child{
+.ul__cards div > img:last-child{
     /* background: magenta; */
     width: 25%;
 }
+
+.ul__cards li >div .visa {
+    width: 19%;
+}
+
+/* ------------------  css footer------------------------ */
 
 .footer{
     background: var(--color-1);
@@ -283,5 +294,10 @@ body{
 
 .ul__footer li img{
     width: 100%;
-    
 }
+
+.ul__footer li img:hover{
+    filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(105deg);
+    transform: scale(1.1);
+}
+
