@@ -70,7 +70,7 @@ body{
 .main{
     /* background: yellowgreen; */
     margin-top: 5%;
-    padding-inline: var(--space-layout-padding-lr) ;
+    /* padding-inline: var(--space-layout-padding-lr) ; */
 
 }
 .main h2{
@@ -79,17 +79,20 @@ body{
     display: flex;
     flex-direction: column;
     font-size: 1.4rem;
+    padding-inline: var(--space-layout-padding-lr);
 }
 
 .main .first__section{
+    /* background: red; */
     display: flex;
     flex-direction: row;
     background: var(--color-2);
     border-radius: 30px;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
     padding-inline: var(--space-layout-padding-lr);
+    margin-inline: var(--space-layout-padding-lr);
     padding-block: 7%;
     position: relative;
     margin-top: 5%;
@@ -111,7 +114,7 @@ body{
     left: -150px;
 }
 
-.asd{
+.chancho__image{
     position: absolute;
     left: 7px;
     width: 100px;
@@ -171,11 +174,12 @@ body{
 }
 
 .ul__cards{
-    margin-top: 5%;
+    margin-top: 3%;
     display: flex;
     width: 100%;
-    gap:15px;
+    gap:13px;
     overflow-x: scroll;
+    padding-left:var(--space-layout-padding-lr);
     
    
     /* background-image: url(../storage/img/background___circles_card\ .svg); */
@@ -185,8 +189,8 @@ body{
  .second__section .ul__cards li{    
     background: var(--color-1);
     position: relative;
-    width:220px;
-    height: 290px;
+    width:190px;
+    height: 265px;
     border-radius:25px;
     display: flex;
     flex-direction: column;
