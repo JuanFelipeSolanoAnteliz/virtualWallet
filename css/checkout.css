@@ -200,15 +200,39 @@ header{
 
     transform: scale(1.1);
 }
-
+.section__graph{
+    display: flex;
+    width: 100%;
+    /* background: blue; */
+    justify-content: center;
+    align-items: center;
+}
 .grafic__section{
     margin: 3.5%;   
     margin-top: 1%;
-    width: 350px;
+    width: 320px;
+    /* padding-left: %; */
     /* background: red; */
 
 }
 
+.weekend__days{
+    margin-top: 10px;
+    display: flex;
+    gap: 10.3%;
+    justify-content: center;
+    align-items: center;
+}
+
+.weekend__days div{
+    color: var(--color-1) ;
+    font-family: "SF-Medium";
+    transition-duration: 0.2s;
+}
+
+.weekend__days :hover{
+    transform: scale(1.4);
+}
 
 .add__green{
     margin-top: 20px;
@@ -284,9 +308,16 @@ header{
     
 }
 
+.ul__footer li:nth-child(2) a{
+    display: flex;
+    width: 75%;
+    transition-duration: 0.3s;
+    justify-content: baseline-end;
+    
+}
 
 .ul__footer li img:hover{
-    filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(105deg);
+    filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(125deg);
     transform: scale(1.1);
     /* filter: invert(1); */
 }

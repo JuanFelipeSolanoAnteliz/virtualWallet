@@ -319,9 +319,17 @@ body{
     
 }
 
+.ul__footer li:nth-child(3) a{
+    display: flex;
+    width: 75%;
+    transition-duration: 0.3s;
+    justify-content: baseline-end;
+    
+}
 
 .ul__footer li img:hover{
-    filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(105deg);
+    filter: grayscale(100%) brightness(65%) sepia(400%) hue-rotate(125deg);
+    /* filter: grayscale(100%) brightness(65%) sepia(400%) hue-rotate(170020deg); */
     transform: scale(1.1);
     /* filter: invert(1); */
 }
