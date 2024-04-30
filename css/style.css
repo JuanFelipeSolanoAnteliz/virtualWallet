@@ -28,10 +28,12 @@
 
 /* ---------css usado para estilizar el background y el header ----------*/
 body{
-    background-color:var(--color-1);
+    background-color:var(--color-6);
     width: 100vw;
     height: 95vh;
-    background-image: url(../storage/img/Group.svg);
+    /* background: no-repeat; */
+    /* background:image-set(../storage/img/bg__card_2.jpg); */
+    background-image:url(../storage/img/bg__card_2.jpg);
 }
 
 header{
@@ -100,6 +102,7 @@ header{
     width: 90%;
     height: 45%;
     color: var(--color-2);
+    
 
 }
 
@@ -219,12 +222,15 @@ progress[value] {
 
 .main .second__section{
     margin-top: 3%;
-    background:#FFFF ;
+    background:var(--color-11-b) ;
     width: 100%;
     height: 100%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     overflow: hidden;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 10px var(--color-11-b);
+  
 }
 
 .second__section p:first-child{
@@ -232,10 +238,10 @@ progress[value] {
     width: 100%;
     height: 7%;
     margin-top: 3%;
-    font-family: "SF-Medium";
+    font-family: "SF-Heavy";
     font-size: 1.2rem;
     padding-inline:var(--space-layout-padding-lr) ;
-    color: var(--color-1);
+    color: var(--color-2);
 
 }
 
@@ -253,7 +259,7 @@ progress[value] {
 }
 
 .article__activities div{
-    background: red;
+    /* background: red; */
     background: var(--color-2);
     width: 130px; /* Ajusta esto según tu contenido */
     height: 100%;
@@ -296,6 +302,7 @@ progress[value] {
 .second__section h3{
     padding-left: var(--space-layout-padding-lr);
     font-family: "SF-Medium";
+    color: var(--color-2);
 }
 
 .second__section .article__transaccion ul{
@@ -329,7 +336,7 @@ progress[value] {
 
 .second__section .article__transaccion li section h4{
     font-family: "SF-Medium";
-    color:var(--color-1);
+    color:var(--color-8);
 }
 
 .second__section .article__transaccion li section small{
@@ -346,7 +353,7 @@ progress[value] {
 /* ---------------------------Footer----------------------------- */
 
 .footer{
-    background: var(--color-1);
+    background: var(--color-6);
     width: 100%;
     height: 10%;
     bottom: 0px;
