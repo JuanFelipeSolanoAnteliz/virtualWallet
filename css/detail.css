@@ -100,7 +100,7 @@ body{
 
 .green__circle {
     position: absolute;
-    background: #E1FFEF;
+    background: var(--color-5);
     width: 290.5px;
     height: 290.5px;
     z-index: 1;

@@ -69,7 +69,7 @@ header{
     padding-block: 7%;
     font-size: 1.2rem;
     color:var(--color-2);
-    font-family: "SF-heavy";
+    font-family: "SF-Medium";
     /* font-family: ; */
 }
 
@@ -83,7 +83,7 @@ header{
 .circle__header{
     background: var(--color-1);
     position:relative;
-    top: -10%;
+    top: -15%;
     height: 300px;
     border-bottom-left-radius: 200% 240%;
     border-bottom-right-radius: 200% 240%;
@@ -96,8 +96,8 @@ header{
     flex-direction: column;
     align-items: center;
     /* justify-content: space-around; */
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     position: absolute;
     left: 25%;
@@ -105,26 +105,28 @@ header{
     gap: 5%;
 }
 
-.circle__title >h1{
+.circle__title > h1{
     color: var(--color-2);
     width: 65%;
     /* background: rebeccapurple; */
     text-align: center;
-    font-family: "SF-Bold";
-    margin-top: 15% ;
+    font-family: "SF-Regular";
+    margin-top: 20% ;
+    font-size: 1.7rem;
 }
 
-.circle__title >div{
+.circle__title > div{
     display: flex;
     align-items: baseline;
 }
 
 .circle__title > div > span,h2{
     color: var(--color-2);
-    font-family: "SF-Bold";
+    font-family: "SF-Heavy";
 }
 
 .circle__header img{
+    /* background: red; */
     width: 370px;
     position: absolute;
     overflow: hidden;
@@ -138,7 +140,7 @@ header{
 }
 
 .main .button__section {
-    margin-top: 5%;
+    /* margin-top: 0%; */
     display: grid;
     /* width: 80%; */
     align-items: center;
@@ -146,7 +148,8 @@ header{
     grid-template-columns: repeat(auto-fit);
     grid-auto-flow: column  ;
     /* grid-template-rows: auto; */
-    padding:8%;
+    padding-block: 3%;
+    padding-inline:8%;
     gap: 3%;
     overflow-x: scroll;
 
@@ -195,14 +198,50 @@ header{
 
 .button__section button:hover{
 
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .grafic__section{
-    margin-top: 2%;
-    width: 380px;
+    margin: 3.5%;   
+    margin-top: 1%;
+    width: 350px;
     /* background: red; */
+
 }
+
+
+.add__green{
+    margin-top: 20px;
+    background: var(--color-5);
+    padding: 40px 23px 80px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+}
+
+.add__green > div > img {
+    width: 104px;
+}
+
+.add__text h4 {
+    font-family: "SF-Medium";
+    font-size: 1.45rem;
+}
+
+.add__text p {
+    font-family: "SF-Light";
+    font-size: .85rem;
+    color: var(--color-4);
+}
+
+.add__green > img {
+    position: absolute;
+    width: 32px;
+    top: 10px;
+    right: 10px;
+}
+
 /* -----------------footer------------- */
 
 .footer{
