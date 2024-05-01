@@ -52,7 +52,9 @@ header{
 
 .header div{
     display: flex;
-    gap: 2%;
+    gap: 7%;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 
@@ -183,7 +185,7 @@ progress[value] {
       }
       progress[value]::-webkit-progress-value {
         border-radius: 1em;
-        background: var(--color-3);
+        background: var(--color-12);
       }
 
 
@@ -197,7 +199,7 @@ progress[value] {
     margin: 2%;
 }
 .main .first__section .balance__cards div #progress_bar_2{
-    --color: var(--color-2);
+    --color: ;
  }
 
  #progress_bar_2 [value] {
@@ -217,7 +219,7 @@ progress[value] {
   }
   #progress_bar_2[value]::-webkit-progress-value {
     border-radius: 1em;
-    background: var(--color-4);
+    background: var(--color-9);
   }
 
 .main .second__section{
@@ -228,9 +230,8 @@ progress[value] {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     overflow: hidden;
-    backdrop-filter: blur(1px);
-    box-shadow: 0 0 10px var(--color-11-b);
-  
+    /* box-shadow: 0 0 10px var(--color-11-b); */
+    backdrop-filter: blur(3px);  
 }
 
 .second__section p:first-child{
@@ -256,24 +257,33 @@ progress[value] {
     /* margin-top: 2%; */
     padding-left: var(--space-layout-padding-lr);
     overflow-x: scroll;
+    padding-block: 4%;
+
 }
 
 .article__activities div{
     /* background: red; */
-    background: var(--color-2);
+    background:  linear-gradient(to left top, var(--color-6), var(--color-7),var(--color-7), var(--color-2));
     width: 130px; /* Ajusta esto según tu contenido */
     height: 100%;
     /* margin-top:% ; */
     border-radius: 25px;
-    box-shadow: 2px 2px 10px var(--color-4);
+    box-shadow: 2px 2px 10px var(--color-6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5%;
     flex-shrink: 0;
+    transition-duration: 0.3s;
+
     /* padding-block: 7%; */
 }
+
+.article__activities > div:hover{
+    transform: scale(1.2);
+}
+
 
 .article__activities div img{
     /* background: green; */
@@ -284,7 +294,7 @@ progress[value] {
 
 .article__activities div p{
     font-family: "SF-Medium";
-    color: var(--color-1);
+    color:var(--color-6);
     /* background: red; */
     /* font-size: 1.1rem; */
 }
@@ -347,7 +357,7 @@ progress[value] {
 .second__section .article__transaccion li img{
 
     /* background: blue; */
-    width: 10%;
+    width: 15%;
 
 }
 /* ---------------------------Footer----------------------------- */
@@ -392,22 +402,22 @@ progress[value] {
     
 }
 
-.ul__footer ul li:last-child a {
+/* .ul__footer ul li:last-child a {
     display: flex;
     width: 75%;
     transition-duration: 0.3s;
     justify-content: baseline-end;
-    filter: none; /* Restablece los estilos de hover */
-    transform: none; /* Restablece los estilos de hover */
+    filter: none;
+    transform: none; 
     
-}
+} */
 
 
 
 
 
 .ul__footer li img:hover{
-    filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(125deg);
+    filter: grayscale(100%) brightness(65%) sepia(100%) hue-rotate(147deg);
     transform: scale(1.1);
     /* filter: invert(1); */
 }
