@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: "SF-Bold";
-    src: url(../storage/font/SF-Pro-Text-Bold.otf);
+    src: url(../storage/new_fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
     font-family: "SF-Heavy";
-    src: url(../storage/font/SF-Pro-Text-Heavy.otf);
+    src: url(../storage/new_fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: "SF-Medium";
-    src: url(../storage/font/SF-Pro-Text-Medium.otf);
+    src: url(../storage/new_fonts/Poppins-SemiBold.ttf);
 }
 
 /* ---------css usado para estilizar el background y el header ----------*/
@@ -33,7 +33,7 @@ body{
     height: 95vh;
     /* background: no-repeat; */
     /* background:image-set(../storage/img/bg__card_2.jpg); */
-    background-image:url(../storage/img/bg__card_2.jpg);
+    background-image:url(../storage/img/bg__index_thing.jpg);
 }
 
 header{
@@ -262,8 +262,7 @@ progress[value] {
 }
 
 .article__activities div{
-    /* background: red; */
-    background:  linear-gradient(to left top, var(--color-6), var(--color-7),var(--color-7), var(--color-2));
+    background: var(--color-2);
     width: 130px; /* Ajusta esto según tu contenido */
     height: 100%;
     /* margin-top:% ; */
@@ -275,13 +274,16 @@ progress[value] {
     align-items: center;
     gap: 5%;
     flex-shrink: 0;
-    transition-duration: 0.3s;
+    transition-duration:  0.5s;
 
     /* padding-block: 7%; */
 }
 
 .article__activities > div:hover{
     transform: scale(1.2);
+    /* background: linear-gradient(to bottom , var(--color-6), var(--color-7),var(--color-2), var(--color-7), var(--color-6)); */
+    background: #c59deb;
+    box-shadow: 0 0 20px var(--color-12);
 }
 
 
@@ -290,6 +292,7 @@ progress[value] {
     width: 40%;
     height: 30%;
 }
+
 
 
 .article__activities div p{
@@ -333,6 +336,10 @@ progress[value] {
     align-items: center;
     gap: 3%;
     /* justify-content: space-between;     */
+}
+
+.second__section .article__transaccion li:hover{
+    background: #2f2b5791;
 }
 
 .second__section .article__transaccion li section{
